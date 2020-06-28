@@ -17,9 +17,8 @@ A) data:
   3) DisasterResponse.db: I'ts the databse where the data are stored after going through the ETL pipelines
   
 B) models:
-  1) train_classifier.py: ML pipeline which loads data, tokenize the messages, setup a pipeline of transformers and predictors,
-                          deploys a model, evaluates the results and save the model in a pickle format
-  2) classifier.pkl: the saved model from ML pipeline
+
+  train_classifier.py: ML pipeline which loads data, tokenize the messages, setup a pipeline of transformers and predictors, deploys a model, evaluates the results and save the model in a pickle format
   
 C) app:
   1) Folder: templates:
