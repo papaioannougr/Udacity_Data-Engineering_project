@@ -9,14 +9,18 @@ CONTENTS:
 4) README.md: Contents of repository & instructions to run the application
 
 Folders:
+
 A) data:
+
   1) disaster_messages.csv & disaster_categories.csv: data files which will be loaded during ETL pipeline
   2) process_data.py: ETL pipeline which loads, cleans and save the data into a database
   3) DisasterResponse.db: I'ts the databse where the data are stored after going through the ETL pipelines
+  
 B) models:
   1) train_classifier.py: ML pipeline which loads data, tokenize the messages, setup a pipeline of transformers and predictors,
                           deploys a model, evaluates the results and save the model in a pickle format
   2) classifier.pkl: the saved model from ML pipeline
+  
 C) app:
   1) Folder: templates:
       i) go.html & master.html: application templates to categorize & visualize the inserted messages 
@@ -24,9 +28,11 @@ C) app:
   
   
   INSTRUCTIONS:
+  
   1) Run the following commands in the project's root directory to set up your database and model.
     - To run ETL pipeline that cleans data and stores in database
           python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+          
     - To run ML pipeline that trains classifier and saves
           python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
         
