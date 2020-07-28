@@ -37,11 +37,11 @@ C) app:
     - To run ML pipeline that trains classifier and saves
           python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
         
-  2) Run the following command in the app's directory to run your web app.
-      python app/run.py
+  2) Run the following command in the app's directory to run your web app:
+        python app/run.py
       
   3) On a new terminal execute command:
-      env|grep WORK
+        env|grep WORK
       
   4) From results of the previous execution, use SPACEID  &  SPACEDOMAIN and go to the following page:
       https://SPACEID-3001.SPACEDOMAIN
