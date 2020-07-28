@@ -38,7 +38,7 @@ C) app:
           python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
         
   2) Run the following command in the app's directory to run your web app.
-      app/python run.py
+      python app/run.py
       
   3) On a new terminal execute command:
       env|grep WORK
